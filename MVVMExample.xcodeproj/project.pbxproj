@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		55197C8D29F17CE800E8BA1E /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55197C8C29F17CE800E8BA1E /* StoreModel.swift */; };
 		55197C9029F1816600E8BA1E /* NumberFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55197C8F29F1816600E8BA1E /* NumberFormatter+Extensions.swift */; };
+		55197C9229F1875200E8BA1E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55197C9129F1875200E8BA1E /* String+Extensions.swift */; };
+		55197C9429F1878E00E8BA1E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55197C9329F1878E00E8BA1E /* LoginView.swift */; };
+		55197C9629F1970400E8BA1E /* LoginFormError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55197C9529F1970400E8BA1E /* LoginFormError.swift */; };
 		5555E50C29F076B600E7BF3F /* MVVMExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5555E50B29F076B600E7BF3F /* MVVMExampleApp.swift */; };
 		5555E50E29F076B600E7BF3F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5555E50D29F076B600E7BF3F /* ContentView.swift */; };
 		5555E51029F076B700E7BF3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5555E50F29F076B700E7BF3F /* Assets.xcassets */; };
@@ -21,6 +24,9 @@
 /* Begin PBXFileReference section */
 		55197C8C29F17CE800E8BA1E /* StoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreModel.swift; sourceTree = "<group>"; };
 		55197C8F29F1816600E8BA1E /* NumberFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		55197C9129F1875200E8BA1E /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		55197C9329F1878E00E8BA1E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		55197C9529F1970400E8BA1E /* LoginFormError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormError.swift; sourceTree = "<group>"; };
 		5555E50829F076B600E7BF3F /* MVVMExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5555E50B29F076B600E7BF3F /* MVVMExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMExampleApp.swift; sourceTree = "<group>"; };
 		5555E50D29F076B600E7BF3F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				55197C8F29F1816600E8BA1E /* NumberFormatter+Extensions.swift */,
+				55197C9129F1875200E8BA1E /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -75,6 +82,7 @@
 				5555E51929F076C600E7BF3F /* Services */,
 				5555E50B29F076B600E7BF3F /* MVVMExampleApp.swift */,
 				5555E50D29F076B600E7BF3F /* ContentView.swift */,
+				55197C9329F1878E00E8BA1E /* LoginView.swift */,
 				5555E50F29F076B700E7BF3F /* Assets.xcassets */,
 				5555E51129F076B700E7BF3F /* Preview Content */,
 			);
@@ -102,6 +110,7 @@
 			children = (
 				5555E51B29F076E300E7BF3F /* Product.swift */,
 				55197C8C29F17CE800E8BA1E /* StoreModel.swift */,
+				55197C9529F1970400E8BA1E /* LoginFormError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,12 +193,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55197C9229F1875200E8BA1E /* String+Extensions.swift in Sources */,
 				5555E50E29F076B600E7BF3F /* ContentView.swift in Sources */,
 				5555E52129F0799200E7BF3F /* ProductListViewModel.swift in Sources */,
+				55197C9429F1878E00E8BA1E /* LoginView.swift in Sources */,
 				55197C9029F1816600E8BA1E /* NumberFormatter+Extensions.swift in Sources */,
 				5555E50C29F076B600E7BF3F /* MVVMExampleApp.swift in Sources */,
 				5555E51E29F0771A00E7BF3F /* Webservice.swift in Sources */,
 				5555E51C29F076E300E7BF3F /* Product.swift in Sources */,
+				55197C9629F1970400E8BA1E /* LoginFormError.swift in Sources */,
 				55197C8D29F17CE800E8BA1E /* StoreModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
