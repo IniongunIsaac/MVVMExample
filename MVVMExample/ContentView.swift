@@ -8,19 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var vm = ProductListViewModel(webservice: Webservice())
+    @EnvironmentObject private var storeModel: StoreModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List(storeModel.products) { product in
+            Text(product.title)
+            Text(product.price as NSNumber, formatter: NumberFormatter.currency)
+        }.task {
+            //await vm.populateProducts()
+            do {
+                try await storeModel.populateProducts()
+            } catch {
+                print(error)
+            }
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(StoreModel(webservice: Webservice()))
     }
 }
